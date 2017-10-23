@@ -73,7 +73,7 @@ a {
 .content {
     min-height: 100vh;
     background-color: #114165;
-    border: 10px solid #6bb6ac;
+    /*border: 10px solid #6bb6ac;*/
     overflow: hidden;
 }
 
