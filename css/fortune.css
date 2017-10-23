@@ -61,6 +61,8 @@ a {
 }
 
 
+
+
 /**/
 
 .container-fluid {
@@ -80,7 +82,8 @@ a {
     color: #ffffff;
 }
 
-#tarot, #tarot2 {
+#tarot,
+#tarot2 {
     display: none;
 }
 
@@ -95,6 +98,8 @@ a {
     transform: translate(-50%, -50%);
     overflow-y: hidden;
 }
+
+
 
 
 /**/
@@ -125,44 +130,67 @@ label {
     z-index: 20;
 }
 
-    .card div {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        background: #FFF;
-        text-align: center;
-        line-height: 200px;
-        backface-visibility: hidden;
-        -webkit-backface-visibility: hidden; /* Chrome 和 Safari */
-        -moz-backface-visibility: hidden;    /* Firefox */
-        -ms-backface-visibility: hidden;     /* Internet Explorer */
-        border-radius: 2px;
-    }
-    .card img {
-        backface-visibility: hidden;
-        -webkit-backface-visibility: hidden; /* Chrome 和 Safari */
-        -moz-backface-visibility: hidden;    /* Firefox */
-        -ms-backface-visibility: hidden;     /* Internet Explorer */
-    }
-    .card .back {
-        -webkit-transform: rotateY(180deg);
-        transform: rotateY(180deg);
-        backface-visibility: hidden;
-        -webkit-backface-visibility: hidden; /* Chrome 和 Safari */
-        -moz-backface-visibility: hidden;    /* Firefox */
-        -ms-backface-visibility: hidden;     /* Internet Explorer */
-    }
+.card div {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #FFF;
+    text-align: center;
+    line-height: 200px;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    /* Chrome 和 Safari */
+    -moz-backface-visibility: hidden;
+    /* Firefox */
+    -ms-backface-visibility: hidden;
+    /* Internet Explorer */
+    border-radius: 2px;
+}
+
+.card img {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    /* Chrome 和 Safari */
+    -moz-backface-visibility: hidden;
+    /* Firefox */
+    -ms-backface-visibility: hidden;
+    /* Internet Explorer */
+}
+
+.card .back {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    /* Chrome 和 Safari */
+    -moz-backface-visibility: hidden;
+    /* Firefox */
+    -ms-backface-visibility: hidden;
+    /* Internet Explorer */
+}
 
 input {
     display: none;
 }
 
-:checked + .card {
+:checked+.card {
     transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
 }
+
+
+
 /*
 label:hover :checked + .card {
     transform: rotateX(180deg);
     -webkit-transform: rotateX(180deg);
 }*/
+
+
+/**/
+
+@media screen and (min-width: 700px) {
+    .tarot-img {
+        width: 35%;
+    }
+}
