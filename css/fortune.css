@@ -83,7 +83,8 @@ a {
 }
 
 #tarot,
-#tarot2 {
+#tarot2,
+#tarot3 {
     display: none;
 }
 
@@ -178,13 +179,10 @@ input {
     -webkit-transform: rotateY(180deg);
 }
 
-
-
-/*
 label:hover :checked + .card {
-    transform: rotateX(180deg);
-    -webkit-transform: rotateX(180deg);
-}*/
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+}
 
 
 /**/

@@ -21,31 +21,44 @@
                 <img src="img/welcome.png" class="tarot-img">
             </div>
             <div id="tarot">
-            <label>
-                <input type="checkbox" />
-                <div class="card">
-                    <div class="front">
-                        <img src="img/2.png" class="tarot-img">
+                <label>
+                    <input type="checkbox" />
+                    <div class="card">
+                        <div class="front">
+                            <img src="img/2.png" class="tarot-img">
+                        </div>
+                        <div class="back">
+                            <img src="img/3.png" class="tarot-img">
+                        </div>
                     </div>
-                    <div class="back">
-                        <img src="img/3.png" class="tarot-img">
-                    </div>
-                </div>
-            </label>
+                </label>
             </div>
             <!--  -->
             <div id="tarot2">
-            <label>
-                <input type="checkbox" />
-                <div class="card">
-                    <div class="front">
-                        <img src="img/4.png" class="tarot-img">
+                <label>
+                    <input type="checkbox" />
+                    <div class="card">
+                        <div class="front">
+                            <img src="img/4.png" class="tarot-img">
+                        </div>
+                        <div class="back">
+                            <img src="img/5.png" class="tarot-img">
+                        </div>
                     </div>
-                    <div class="back">
-                        <img src="img/5.png" class="tarot-img">
+                </label>
+            </div>
+            <div id="tarot3">
+                <label>
+                    <input type="checkbox" />
+                    <div class="card">
+                        <div class="front">
+                            <img src="img/6.png" class="tarot-img">
+                        </div>
+                        <div class="back">
+                            <img src="img/7.png" class="tarot-img">
+                        </div>
                     </div>
-                </div>
-            </label>
+                </label>
             </div>
         </div>
     </div>
@@ -79,6 +92,13 @@
                     document.getElementById("demo-area-01-show").innerHTML = document.getElementById("tarot2").innerHTML;
                     document.getElementById("content-change").style.backgroundColor = '#1c2f53';
                     document.getElementById("content-change").style.borderColor = '#c35d3f';
+                    matrix.animateStop();
+                    matrix.on("0000000000000000");
+                    matrix.on("3c4281818181423c");
+                } else if (rfid._uid == 'AB5B48D5')  {
+                    document.getElementById("demo-area-01-show").innerHTML = document.getElementById("tarot3").innerHTML;
+                    document.getElementById("content-change").style.backgroundColor = '#242425';
+                    document.getElementById("content-change").style.borderColor = '#d59134';
                     matrix.animateStop();
                     matrix.on("0000000000000000");
                     matrix.on("3c4281818181423c");
