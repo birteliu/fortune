@@ -60,6 +60,19 @@
                     </div>
                 </label>
             </div>
+            <div id="tarot4">
+                <label>
+                    <input type="checkbox" />
+                    <div class="card">
+                        <div class="front">
+                            <img src="img/8.png" class="tarot-img">
+                        </div>
+                        <div class="back">
+                            <img src="img/9.png" class="tarot-img">
+                        </div>
+                    </div>
+                </label>
+            </div>
         </div>
     </div>
     <script>
@@ -95,14 +108,20 @@
                     matrix.animateStop();
                     matrix.on("0000000000000000");
                     matrix.on("3c4281818181423c");
-                } else if (rfid._uid == 'AB5B48D5')  {
+                } else if (rfid._uid == 'AB5B48D5') {
                     document.getElementById("demo-area-01-show").innerHTML = document.getElementById("tarot3").innerHTML;
                     document.getElementById("content-change").style.backgroundColor = '#242425';
                     // document.getElementById("content-change").style.borderColor = '#d59134';
                     matrix.animateStop();
                     matrix.on("0000000000000000");
                     matrix.on("3c4281818181423c");
-                } else {
+                } else if (rfid._uid == 'F6884F55') {
+                    document.getElementById("demo-area-01-show").innerHTML = document.getElementById("tarot4").innerHTML;
+                    document.getElementById("content-change").style.backgroundColor = '#7a255f';
+                    matrix.animateStop();
+                    matrix.on("0000000000000000");
+                    matrix.on("3c4281818181423c");                    
+                }else {
                     document.getElementById("demo-area-01-show").innerHTML = rfid._uid;
                     matrix.animateStop();
                     matrix.on("0000000000000000");
