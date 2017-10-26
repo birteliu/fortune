@@ -73,6 +73,19 @@
                     </div>
                 </label>
             </div>
+            <div id="tarot5">
+                <label>
+                    <input type="checkbox" />
+                    <div class="card">
+                        <div class="front">
+                            <img src="img/10.png" class="tarot-img">
+                        </div>
+                        <div class="back">
+                            <img src="img/11.png" class="tarot-img">
+                        </div>
+                    </div>
+                </label>
+            </div>
         </div>
     </div>
     <script>
@@ -121,7 +134,13 @@
                     matrix.animateStop();
                     matrix.on("0000000000000000");
                     matrix.on("62c7c2d8d8c2c762");                    
-                }else {
+                } else if (rfid._uid == 'B1DA4F55') {
+                    document.getElementById("demo-area-01-show").innerHTML = document.getElementById("tarot5").innerHTML;
+                    document.getElementById("content-change").style.backgroundColor = '#d35f3d';
+                    matrix.animateStop();
+                    matrix.on("0000000000000000");
+                    matrix.on("62c7c2d8d8c2c762");                    
+                } else {
                     document.getElementById("demo-area-01-show").innerHTML = rfid._uid;
                     matrix.animateStop();
                     matrix.on("0000000000000000");
