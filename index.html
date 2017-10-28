@@ -153,16 +153,18 @@
             });
         });
 
-        var card = document.getElementById('card');
-        card.addEventListener('click', function() {
-            if (!this.classList.contains('on')) {
-                this.classList.remove('off');
-                this.classList.add('on');
-            } else {
-                this.classList.remove('on');
-                this.classList.add('off');
-            }
-        });
+        var card = document.getElementsByClassName('card');
+        for (var i = 0; i < card.length; i++) {
+          card[i].addEventListener('click', function() {
+              if (!this.classList.contains('on')) {
+                  this.classList.remove('off');
+                  this.classList.add('on');
+              } else {
+                  this.classList.remove('on');
+                  this.classList.add('off');
+              }
+          });
+        }
 
     }());
     </script>
