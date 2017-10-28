@@ -106,25 +106,20 @@
             rfid.on("enter", function(_uid) {
                 rfid._uid = _uid;
                 if (rfid._uid == '5A8F4F55') {
-                    // document.getElementById("demo-area-01-show").innerHTML = rfid._uid;
                     document.getElementById("demo-area-01-show").innerHTML = document.getElementById("tarot").innerHTML;
                     document.getElementById("content-change").style.backgroundColor = '#114165';
-                    // document.getElementById("content-change").style.borderColor = '#6bb6ac';
-                    // document.getElementById("demo-area-01-show").style.color = '#3333ff';
                     matrix.animateStop();
                     matrix.on("0000000000000000");
                     matrix.on("0c1e3e7c7c3e1e0c");
                 } else if (rfid._uid == 'B613B3AB') {
                     document.getElementById("demo-area-01-show").innerHTML = document.getElementById("tarot2").innerHTML;
                     document.getElementById("content-change").style.backgroundColor = '#1c2f53';
-                    // document.getElementById("content-change").style.borderColor = '#c35d3f';
                     matrix.animateStop();
                     matrix.on("0000000000000000");
                     matrix.on("3c4295a1a195423c");
                 } else if (rfid._uid == 'AB5B48D5') {
                     document.getElementById("demo-area-01-show").innerHTML = document.getElementById("tarot3").innerHTML;
                     document.getElementById("content-change").style.backgroundColor = '#242425';
-                    // document.getElementById("content-change").style.borderColor = '#d59134';
                     matrix.animateStop();
                     matrix.on("0000000000000000");
                     matrix.on("995a3cffff3c5a99");
