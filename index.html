@@ -141,10 +141,11 @@
                     matrix.on("0000000000000000");
                     matrix.on("8142241818244281");
                 }
-                await delay(1);
-                matrix.animateStop();
-                matrix.on("0000000000000000");
-                matrix.on('');
+                setTimeout(function () {
+                  matrix.animateStop();
+                  matrix.on("0000000000000000");
+                  matrix.on('');
+                }, 1000);
             });
         });
 
